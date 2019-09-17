@@ -1,14 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
+  <script type="text/javascript" src="../node_modules/jsprintmanager/JSPrintManager.js"></script>
+  <script type="text/javascript" src="../node_modules/zip-js/WebContent/zip.js"></script>
+  <script type="text/javascript" src="../node_modules/zip-js/WebContent/deflate.js"></script>
+
+
+
+  <!-- <script type="text/javascript">
+
+    JSPM.JSPrintManager.auto_reconnect = true;
+    JSPM.JSPrintManager.start();
+    JSPM.JSPrintManager.WS.onStatusChanged = () => {
+      if (JSPM.JSPrintManager.websocket_status == JSPM.WSStatus.Open) {
+        JSPM.JSPrintManager.getPrinters().then((e) => {
+          console.log(e);
+        });
+      }
+    };
+
+  </script> -->
+
+
   <meta charset="utf-8">
-  <title>Jsprinttest</title>
+  <title>JSPM</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
